@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+</head>
+<body>
+
+    <h1>Multiplication Table</h1>
+    
+    <script>
+
+        function multiplicationTable(n) { // Substitua "nomeDaSuaFuncao" por um nome mais apropriado
+            // escreve a coluna inicial
+            let bloco = [];
+            for (let x = 0; x <= n; x++) {
+                bloco[x] = [];
+
+                for (let y = 0; y <= n; y++) {
+                    bloco[x][y] = x * y;
+                }
+
+            }
+            console.table(bloco);
+            // TODO: escrever dois loops aninhados para desenhar o array bidimencional e monstar o restante da tabela no console.
+        }
+    </script>
+
+</body>
+</html>
